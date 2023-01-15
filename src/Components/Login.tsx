@@ -5,7 +5,7 @@ import { LockClosedIcon } from '@heroicons/react/20/solid'
 import { ETypes, MessageCard } from './Atoms/MessageCard'
 import { SpacerWithText } from './Atoms/SpacerWithText'
 import { SocialSignIn } from './SocialSignIn'
-
+import Banner from '../assets/bg.png'
 export default function Login() {
   const emailRef = useRef<HTMLInputElement>(null)
   const passwordRef = useRef<HTMLInputElement>(null)
@@ -38,10 +38,13 @@ export default function Login() {
         <div className="w-full max-w-md space-y-8">
           <div>
             <img
-              className="mx-auto h-12 w-auto"
-              src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii0xMS41IC0xMC4yMzE3NCAyMyAyMC40NjM0OCI+CiAgPHRpdGxlPlJlYWN0IExvZ288L3RpdGxlPgogIDxjaXJjbGUgY3g9IjAiIGN5PSIwIiByPSIyLjA1IiBmaWxsPSIjNjFkYWZiIi8+CiAgPGcgc3Ryb2tlPSIjNjFkYWZiIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIi8+CiAgICA8ZWxsaXBzZSByeD0iMTEiIHJ5PSI0LjIiIHRyYW5zZm9ybT0icm90YXRlKDYwKSIvPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIiB0cmFuc2Zvcm09InJvdGF0ZSgxMjApIi8+CiAgPC9nPgo8L3N2Zz4K"
+              className="mx-auto h-40 w-auto"
+              src={Banner}
               alt="Your Company"
             />
+            <h1 className="mt-6 text-center text-3xl font-bold tracking-tight text-red-600">
+              Enjoy Chinese Cuisine
+            </h1>
             <h2 className="mt-6 text-center text-3xl font-bold tracking-tight text-gray-900">
               Sign in to your account
             </h2>
@@ -123,18 +126,7 @@ export default function Login() {
                 Sign in
               </button>
             </div>
-            <div className="text-sm text-center">
-              <Link
-                className="font-medium text-indigo-600 hover:text-indigo-500"
-                to="/signup"
-              >
-                Don't have an account?
-              </Link>
-            </div>
           </form>
-
-          <SpacerWithText text="or" />
-          <SocialSignIn setError={setError} enabled={!loading} />
         </div>
       </div>
     </>
