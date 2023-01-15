@@ -1,9 +1,9 @@
 {
-  "name": "client",
+  "name": "enjoytaxv2",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://igorbayerl.github.io/chess-two",
+  "homepage": "",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
