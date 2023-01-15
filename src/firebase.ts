@@ -2,13 +2,13 @@ import firebase from 'firebase/compat/app'
 import 'firebase/compat/auth'
 
 const app = firebase.initializeApp({
-  apiKey: import.meta.env.VITE_API_KEY,
-  authDomain: import.meta.env.VITE_AUTH_DOMAIN,
-  projectId: import.meta.env.VITE_PROJECT_ID,
-  storageBucket: import.meta.env.VITE_STORAGE_BUCKET,
-  messagingSenderId: import.meta.env.VITE_MESSAGING_SENDER_ID,
-  appId: import.meta.env.VITE_APP_ID,
-  measurementId: import.meta.env.VITE_MEASUREMENT_ID,
+  apiKey: "AIzaSyCRrIX7wN5XixioScYpGZ2-S7n8-CjAuVI",
+  authDomain: "enjoytaxv2.firebaseapp.com",
+  projectId: "enjoytaxv2",
+  storageBucket: "enjoytaxv2.appspot.com",
+  messagingSenderId: "968665410992",
+  appId: "1:968665410992:web:f3cba5231d6ea0b00cfa75",
+  measurementId: "G-1M44V4Q2Y5"
 })
 
 export const auth = app.auth()
